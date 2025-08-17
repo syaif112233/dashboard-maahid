@@ -23,11 +23,11 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-      - run: npm ci
+      - run: npm install --no-audit --no-fund
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist   # output build Vite
+          path: ./dist   # Vite output
   deploy:
     needs: build
     runs-on: ubuntu-latest
