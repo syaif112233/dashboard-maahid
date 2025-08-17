@@ -16,6 +16,25 @@ const Index = () => {
         </header>
 
         <div className="grid gap-6">
+          {/* Input Absensi Musyrif */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <UserCheck className="h-5 w-5" />
+                Input Absensi Musyrif
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Button 
+                onClick={() => openSpreadsheet('https://docs.google.com/spreadsheets/d/1YlMJhjkKW86xiPuM2WaTW7UVKi-ebTkU7E92seIpXTQ/edit?gid=583390075#gid=583390075')}
+                className="flex items-center gap-2"
+              >
+                <ExternalLink className="h-4 w-4" />
+                Buka Spreadsheet Absensi Musyrif
+              </Button>
+            </CardContent>
+          </Card>
+          
           {/* Input Pelanggaran */}
           <Card>
             <CardHeader>
